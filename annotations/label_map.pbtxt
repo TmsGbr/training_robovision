@@ -1,0 +1,64 @@
+item {
+    id: 1
+    name: 'left_near_corner'
+}
+
+item {
+    id: 2
+    name: 'left_near_goal'
+}
+
+item {
+    id: 3
+    name: 'left_far_goal'
+}
+
+item {
+    id: 4
+    name: 'left_far_corner'
+}
+
+item {
+    id: 5
+    name: 'left_point'
+}
+
+item {
+    id: 6
+    name: 'middle_near_corner'
+}
+
+item {
+    id: 7
+    name: 'middle_far_corner'
+}
+
+item {
+    id: 8
+    name: 'middle_point'
+}
+
+item {
+    id: 9
+    name: 'right_near_corner'
+}
+
+item {
+    id: 10
+    name: 'right_near_goal'
+}
+
+item {
+    id: 11
+    name: 'right_far_goal'
+}
+
+item {
+    id: 12
+    name: 'right_far_corner'
+}
+
+item {
+    id: 13
+    name: 'right_point'
+}

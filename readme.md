@@ -182,6 +182,8 @@ except KeyboardInterrupt:
     print('Stopped')
 ```
 
+![live view example](documentation/live_view.png)
+
 ## Project Flow
 
 ### Preliminary Considerations
@@ -292,6 +294,8 @@ There are 6 corners:
 
 Labeling all 350 images with an average of around 3-5 labels per image took me way longer than what I previously accounted for. I spent nearly 8 hours drawing boxes and selecting labels in *labelImg*.
 
+![labelImg](documentation/labelImg.jpg)
+
 #### Creating a Label Map
 *TensorFlow* needs a label map to assign an integer value to every label. I provide a ```label_map.pbtxt``` in the ```annotations``` folder.
 ```
@@ -348,6 +352,8 @@ I used *TensorBoard* to monitor the training progress.
 tensorboard --logdir=models/<model folder>
 ```
 
+![tensorboard](documentation/tensorboard.png)
+
 #### Model Export
 *TensorFlow* provides a script for model export. Run it from the root directory with
 ```shell
@@ -366,6 +372,8 @@ My final/best model on the other hand (```exported-models/robo6-3-1```) used a b
 
 ## Results
 I got a model that could find many, but not all of the objects when moving around the field. Especially problematic is, that due to the positional encoded labels the model for example can't decide if a point is left_point, right_point or middle_point. This results in a performance that is partially shaky, but overall proves that the general approach with machine learning is promising. It needs refinement to be more reliable but that will come with more experience.
+
+You can find a demonstration video with my robo6-3-1 model [here](https://drive.google.com/file/d/1ECNvUD32wIDQ21UyZiAJHlA416AkOguz/view?usp=sharing)
 
 ## Next Steps
 Developing the infrastructure and then training a *Convolutional Neural Network* based on simulation data and testing it for its accuracy worked fine within the simulation.
